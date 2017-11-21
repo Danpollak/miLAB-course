@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="pollak.dan.exercise_04.MainActivity"
+    tools:showIn="@layout/activity_main">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Your Daily Remainder"
+        android:textSize="50px"
+        android:id="@+id/remainder_title"
+        android:layout_marginTop="100dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/interval_label"
+        android:text="Enter Interval:"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/interval_edit"
+        android:layout_below="@+id/interval_label"
+        android:inputType="number"
+        android:maxLength="3"
+        android:text="5"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minutes_label"
+        android:layout_toRightOf="@id/interval_edit"
+        android:layout_below="@id/interval_label"
+        android:layout_marginTop="15dp"
+        android:text="Minutes"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/interval_button"
+        android:layout_below="@id/interval_edit"
+        android:layout_centerHorizontal="true"
+        android:text="Remind Me!"
+
+
+        />
+
+</RelativeLayout>
