@@ -1,6 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const PORT = process.env.PORT || 3000;
 let server = express();
 
 const availableFiles = {
@@ -28,10 +29,10 @@ server.get("/files/:filename", (req,res) => {
       res.status(200);
     });
   } else {
-    res.status(404).send("file not found :(");
+    res.status(404).send(`Sorry, I couldn't find the file ${filename} :(`);
   }
 });
 
-server.listen(3000, () => {
-  console.log('listening at 3000');
+server.listen(PORT, () => {
+  console.log(`listening at ${PORT}`);
 });
