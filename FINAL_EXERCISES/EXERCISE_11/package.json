@@ -1,0 +1,17 @@
+{
+  "name": "exercise_11",
+  "version": "1.0.0",
+  "description": "miLAB course ex11",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Pollak",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.1"
+  }
+}
